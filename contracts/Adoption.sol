@@ -11,7 +11,7 @@ contract Adoption is Donation {
     event NewAdoption(address adopter, uint256 petId);
 
     constructor() {
-        owner = msg.sender;
+        owner = payable(msg.sender);
     }
 
     function adopt(uint256 petId) public returns (uint256) {
