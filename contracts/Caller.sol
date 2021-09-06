@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity > 0.7.0;
+pragma solidity >0.7.0;
 
 contract Caller {
     event Response(bool success, bytes data);
-event Received(address caller, uint256 amount, string message);
+    event Received(address caller, uint256 amount, string message);
 
-    function stealEth(address addr) public view returns (uint) {
+    function stealEth(address addr) public view returns (uint256) {
         Callee c = Callee(addr);
         return address(c).balance;
     }

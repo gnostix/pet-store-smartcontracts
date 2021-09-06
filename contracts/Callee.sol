@@ -7,13 +7,13 @@ contract Callee {
 
     event Received(address caller, uint256 amount, string message);
 
-    fallback() external payable {
-        emit Received(msg.sender, msg.value, "Fallback was called");
-    }
+    // fallback() external payable {
+    //     emit Received(msg.sender, msg.value, "Fallback was called");
+    // }
 
-    receive() external payable {
-        emit Received(msg.sender, msg.value, "receive was called");
-    }
+    // receive() external payable {
+    //     emit Received(msg.sender, msg.value, "receive was called");
+    // }
 
     function getValue(uint256 initial) public pure returns (uint256) {
         return initial + 150;

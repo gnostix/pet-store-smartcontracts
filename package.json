@@ -13,11 +13,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "@openzeppelin/truffle-upgrades": "^1.9.1",
+    "chai": "^4.3.4",
+    "truffle": "^5.1.35"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.1",
     "@openzeppelin/contracts-upgradeable": "^4.3.1",
-    "@openzeppelin/truffle-upgrades": "^1.9.1"
+    "fs-extra": "^10.0.0"
   }
 }
